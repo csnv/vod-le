@@ -1,0 +1,27 @@
+{
+  "industries": [
+    { "id": 0, "name": "Stark Industries" },
+    { "id": 1, "name": "Stark Industries" },
+    { "id": 2, "name": "Stark Industries" },
+    { "id": 3, "name": "Stark Industries" },
+    { "id": 4, "name": "Stark Industries" },
+    { "id": 5, "name": "Stark Industries" },
+    { "id": 6, "name": "Stark Industries" },
+    { "id": 7, "name": "Stark Industries" }
+  ],
+  "devices": [
+    { "id": 0, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 1, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 2, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 3, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 4, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 5, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 6, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 7, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 8, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 9, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 10, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 11, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 },
+    { "id": 12, "name": "Device name 1", "additionTime": "14:08", "amount": "5", "fee": 12.0, "industryId": 0 }
+  ]
+}
