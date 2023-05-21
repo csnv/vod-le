@@ -1,13 +1,12 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Industry } from './industry.model';
 import { BehaviorSubject } from 'rxjs';
-
 @Injectable({
   providedIn: 'root'
 })
-export class IndustryService implements OnInit {
+export class IndustryService {
   /* Industry API endpoint */
   private INDUSTRIES_ENDPOINT = '/industries';
   /* List of industry elements */
@@ -17,12 +16,14 @@ export class IndustryService implements OnInit {
 
   constructor(
     private httpClient: HttpClient
-  ) {}
+  ) {
+    this.fetch();
+  }
 
   /**
    * Retrieve data on initialization
    */
-  ngOnInit(): void {
+  fetch(): void {
     this.fetchIndustries().subscribe((response) => {
       this.industries = response as Industry[];
       this.industriesSub.next([...this.industries]);
@@ -64,6 +65,23 @@ export class IndustryService implements OnInit {
     
     this.industries[index] = clone;
     this.propagate();
+  }
+
+  public removeIndustry(industry: Industry) {
+    this.industries = this.industries.filter(item => item.id !== industry.id);
+
+    this.httpClient.delete(environment.api + this.INDUSTRIES_ENDPOINT + `/${industry.id}`)
+      .subscribe(() => {
+        this.propagate();
+      });
+  }
+
+  public add(name: string) {
+    this.httpClient.post(environment.api + this.INDUSTRIES_ENDPOINT, {
+      body: {
+        name: name
+      }
+    }).subscribe((response) => console.log(response));
   }
 
   /**

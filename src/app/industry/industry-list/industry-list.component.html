@@ -1,0 +1,13 @@
+<div>
+    <ul>
+        <li *ngFor="let item of industries | sort : sortingField : sortingDir">
+            <div>
+                <span>{{ item.id }}</span>
+                <span>{{ item.name }}</span>
+                <span (click)="onModify(item)">Modify</span>
+                <span (click)="onDelete(item)">Delete</span>
+                <span (click)="onAdd()">Add</span>
+            </div>
+        </li>
+    </ul>
+</div>

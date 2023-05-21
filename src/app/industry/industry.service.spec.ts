@@ -24,8 +24,6 @@ describe('IndustryService', () => {
   });
 
   it('should make an api call', () => {
-    service.ngOnInit();
-
     const request = httpController.expectOne({
       method: 'GET',
       url: environment.api + '/industries'
@@ -56,7 +54,7 @@ describe('IndustryService', () => {
   it('should update an existing item', () => {
     const length = api.industries.length;
     const randomIndex = Math.floor(Math.random() * length);
-    const randomitem = api.industries[randomIndex];
+    const randomitem = api.industries[randomIndex] as Industry;
     const clone = {...randomitem};
 
     clone.name = 'Test name';
