@@ -1,0 +1,18 @@
+.btn {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  height: 35px;
+  cursor: pointer;
+  transition: 0.3s;  
+  
+  &.primary {
+    background-color: #36c395;
+    padding: 0 15px;
+    color: white;
+
+    &:hover {
+      background-color: #24a178;
+    }
+  }
+}

@@ -1,13 +1,48 @@
-<div>
-    <ul>
-        <li *ngFor="let item of industries | sort : sortingField : sortingDir">
-            <div>
-                <span>{{ item.id }}</span>
-                <span>{{ item.name }}</span>
-                <span (click)="onModify(item)">Modify</span>
-                <span (click)="onDelete(item)">Delete</span>
-                <span (click)="onAdd()">Add</span>
-            </div>
-        </li>
-    </ul>
+<div class="search-container">
+  <input class="search" [(ngModel)]="searchValue" (ngModelChange)="filterList()"placeholder="Search By Industry Name">
+</div>
+
+<table>
+  <thead>
+    <ng-template #header let-name="name" let-key="key">
+      <th>
+        <span
+        class="toggeable"
+        (click)="onHeaderToggle(key)">
+          {{ name }}
+        </span>
+        <img
+          class="order-icon"
+          *ngIf="sortingField === key"
+          [class.reversed]="sortingDir === 1"
+          src="../../../assets/svg/arrow-down.svg">
+      </th>
+    </ng-template>
+    <ng-container *ngTemplateOutlet="header; context: { name: 'Code', key: 'id' }"></ng-container>
+    <ng-container *ngTemplateOutlet="header; context: { name: 'Name', key: 'name' }"></ng-container>
+    <th>
+      <span>Actions</span>
+    </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="
+        let item of displayIndustries |
+        sort: sortingField: sortingDir |
+        paginate: currentPage : ITEMS_PER_PAGE
+    ">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>
+        <span class="action" (click)="onModify(item)">Modify</span>
+        <span class="action danger" (click)="onDelete(item)">Delete</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="pagination-container">
+  <app-pagination
+    [total]="totalPages"
+    [current]="currentPage"
+    (pageChanged)="onPaginationChanged($event)"
+  ></app-pagination>
 </div>

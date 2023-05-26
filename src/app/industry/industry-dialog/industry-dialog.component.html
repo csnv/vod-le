@@ -1,1 +1,18 @@
-<p>industry-dialog works!</p>
+<div class="dialog">
+  <section class="title">
+    <h2>{{ data.title }}</h2>
+    <button class="close" (click)="onClose()" autofocus="false"></button>
+  </section>
+  <section class="content">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <div class="group">
+        <label for="name">Name*</label>
+        <input #nameInput name="name" #name="ngModel" type="text" [(ngModel)]="item.name" required>
+        <span *ngIf="form.submitted && name.invalid" class="error">Required field</span>
+      </div>
+      <div class="buttons">
+        <button type="submit" class="btn primary">Submit</button>
+      </div>
+    </form>
+  </section>
+</div>

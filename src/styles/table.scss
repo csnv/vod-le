@@ -1,0 +1,14 @@
+table {
+  border-collapse: collapse;
+  
+  th, tr, td {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgb(249, 249, 251);
+  }
+
+  
+}

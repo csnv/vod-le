@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IndustryComponent } from './industry/industry.component';
-import { DeviceComponent } from './device/device.component';
 
-import { HttpClientModule } from '@angular/common/http';
+import { SortPipe } from './shared/pipes/sort/sort.pipe';
+import { PaginatePipe } from './shared/pipes/paginate/paginate.pipe';
+
+import { PaginationComponent } from './shared/components/pagination/pagination.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+
+import { IndustryComponent } from './industry/industry.component';
 import { IndustryListComponent } from './industry/industry-list/industry-list.component';
-import { HeaderComponent } from './header/header.component';
-import { SortPipe } from './shared/sort/sort.pipe';
 import { IndustryDialogComponent } from './industry/industry-dialog/industry-dialog.component';
+
+import { DeviceComponent } from './device/device.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +27,12 @@ import { IndustryDialogComponent } from './industry/industry-dialog/industry-dia
     IndustryListComponent,
     HeaderComponent,
     SortPipe,
-    IndustryDialogComponent
+    IndustryDialogComponent,
+    PaginatePipe,
+    PaginationComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

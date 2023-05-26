@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
-import { Industry } from './industry.model';
-import { IndustryService } from './industry.service';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { IndustryDialogComponent } from './industry-dialog/industry-dialog.component';
 
 @Component({
   selector: 'app-industry',
@@ -10,6 +9,20 @@ import { IndustryService } from './industry.service';
 })
 export class IndustryComponent {
   constructor(
-    private industryService: IndustryService
+    public dialog: MatDialog
   ) {}
+
+  /**
+   * User presses on adding a new industry
+   * Opens dialog
+   */
+  onAdd() {
+    this.dialog.open(IndustryDialogComponent, {
+      autoFocus: true,
+      data: {
+        type: 'add',
+        title: 'New Industry'
+      }
+    });
+  }
 }

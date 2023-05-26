@@ -12,7 +12,7 @@ export class SortPipe implements PipeTransform {
    * @returns Ordered copy of array
    */
   transform(list: any[], sortKey: string, sortDir: number = 1): any[] {
-    if (!list)
+    if (!list || !Array.isArray(list))
       return [];
 
     const arr = [...list];
