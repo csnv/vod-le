@@ -24,8 +24,6 @@ describe('IndustryService', () => {
   });
 
   it('should make an api call', () => {
-    service.ngOnInit();
-
     const request = httpController.expectOne({
       method: 'GET',
       url: environment.api + '/industries'
@@ -34,29 +32,26 @@ describe('IndustryService', () => {
     request.flush(api.industries);
   });
 
-  it('should return the same number of items', () => {
+  it('get the same number of items', () => {
     service.getIndustries().subscribe((industries) => {
       expect(industries).toEqual(api.industries);
     });
   });
 
-  it('should add a new item', () => {
-    const newItem: Industry = {
-      id: 999,
-      name: 'New Industry'
-    };
+  it('add a new item', () => {
+    const newIndustryName = 'New Industry';
 
-    service.addIndustry(newItem);
+    service.addIndustry(newIndustryName);
     service.getIndustries().subscribe((industries) => {
       const last = industries.pop();
-      expect(last).toBe(newItem);
+      expect(last).toBe(newIndustryName);
     });
   });
 
-  it('should update an existing item', () => {
+  it('update an existing item', () => {
     const length = api.industries.length;
     const randomIndex = Math.floor(Math.random() * length);
-    const randomitem = api.industries[randomIndex];
+    const randomitem = api.industries[randomIndex] as Industry;
     const clone = {...randomitem};
 
     clone.name = 'Test name';
@@ -65,6 +60,13 @@ describe('IndustryService', () => {
       const modifiedItem = industries.find(item => item.id === clone.id) as Industry;
       expect(modifiedItem).toEqual(clone);
     });
-
+  });
+  
+  it('remove an existing item', () => {
+    const startingLength = api.industries.length;
+    service.removeIndustry(api.industries[0]);
+    service.getIndustries().subscribe(industries => {
+      expect(industries.length).toBe(startingLength - 1);
+    })
   });
 });

@@ -1,0 +1,61 @@
+.order-icon {
+  height: 12px;
+
+  &.reversed {
+    transform: rotate(180deg);
+  }
+}
+
+.toggeable {
+  cursor: pointer;
+}
+
+.search-container {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+
+  input {
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 7px;
+  }
+}
+
+table {
+  width: 100%;
+
+  @mixin cell-width($child, $width) {
+    th:nth-child(#{$child}), td:nth-child(#{$child}) { width: $width }
+  }
+
+  @include cell-width(1, 30% );
+  @include cell-width(2, 50% );
+  @include cell-width(3, 20% );
+
+  .action {
+    color: #36c395;
+    cursor: pointer;
+    margin-left: 25px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.danger {
+      color: red;
+    }
+  }
+}
+
+.pagination-container {
+  width: 100%;
+  margin-top: 25px;
+}

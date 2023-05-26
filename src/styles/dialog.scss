@@ -1,0 +1,69 @@
+.dialog {
+  padding: 25px;
+  background-color: white;
+  min-width: 300px;
+  
+  .title {
+    h2 {
+      margin-top: 0;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: #666;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: #999;
+      }
+      &:after {
+        display: inline-block;
+        content: "\00d7"; /* 'X' symbol */
+      }
+    }
+  }
+
+  .group {
+    margin-top: 25px;
+    &:fist-child {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type=text] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      border: 1px solid #ccc;
+      outline: none;
+      border-radius: 3px;
+    }
+
+    .error {
+      font-size: 14px;
+      color: red;
+    }
+  }
+
+  .buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    & > button {
+      flex: 1;
+    }
+  }
+}

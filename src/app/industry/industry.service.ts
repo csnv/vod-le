@@ -1,13 +1,12 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Industry } from './industry.model';
 import { BehaviorSubject } from 'rxjs';
-
 @Injectable({
   providedIn: 'root'
 })
-export class IndustryService implements OnInit {
+export class IndustryService {
   /* Industry API endpoint */
   private INDUSTRIES_ENDPOINT = '/industries';
   /* List of industry elements */
@@ -17,12 +16,14 @@ export class IndustryService implements OnInit {
 
   constructor(
     private httpClient: HttpClient
-  ) {}
+  ) {
+    this.fetch();
+  }
 
   /**
    * Retrieve data on initialization
    */
-  ngOnInit(): void {
+  private fetch(): void {
     this.fetchIndustries().subscribe((response) => {
       this.industries = response as Industry[];
       this.industriesSub.next([...this.industries]);
@@ -45,16 +46,6 @@ export class IndustryService implements OnInit {
   }
 
   /**
-   * Clones the desired industry element and adds it to the industry stack
-   * @param industry Industry item
-   */
-  public addIndustry(industry: Industry) {
-    const clone = { ...industry };
-    this.industries.push(clone);
-    this.propagate();
-  }
-
-  /**
    * Clones the desired industry element and replaces it in the industry stack
    * @param industry Industry item
    */
@@ -62,8 +53,40 @@ export class IndustryService implements OnInit {
     const clone = { ...industry };
     const index = this.industries.findIndex(_industry => _industry.id === clone.id);
     
-    this.industries[index] = clone;
-    this.propagate();
+    this.httpClient.put(environment.api + this.INDUSTRIES_ENDPOINT + `/${industry.id}`, {
+      ...clone
+    }).subscribe(() => {
+      this.industries[index] = clone;
+      this.propagate();
+    });
+  }
+
+  /**
+   * Removes an industry from backend
+   * @param industry Industry item
+   */
+  public removeIndustry(industry: Industry) {
+    this.httpClient.delete(environment.api + this.INDUSTRIES_ENDPOINT + `/${industry.id}`)
+      .subscribe(() => {
+        this.industries = this.industries.filter(item => item.id !== industry.id);
+        this.propagate();
+      });
+  }
+
+  /**
+   * Pushes a new industry to backend
+   * @param name Industry name
+   */
+  public addIndustry(name: string) {
+    // Service call
+    this.httpClient.post(
+      environment.api + this.INDUSTRIES_ENDPOINT,
+      { name }
+    ).subscribe((response: any) => {
+      // Local reflection and propagation
+      this.industries.push({ ...response });
+      this.propagate();
+    });
   }
 
   /**

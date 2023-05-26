@@ -1,0 +1,54 @@
+.bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px #aaa;
+    color: #666;
+
+    .banner {
+        flex: 0;
+
+        .title {
+            font-family: 'Impact', sans-serif;
+            font-size: 30px;
+            color: #36c395;
+        }
+
+        .subtitle {
+            white-space: nowrap;
+            font-size: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    }
+
+    nav {
+        flex: 0;
+        display: flex;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 0 8px;
+            border-radius: 5px;
+            margin-left: 8px;
+
+            &:hover {
+                color: #1d7c5c;
+                background-color: #def1ea;
+            }
+
+            &.active {
+                pointer-events: none;
+                cursor: unset;
+                color: white;
+                background-color: rgb(224, 224, 224);
+            }
+        }
+    }
+}
