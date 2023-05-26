@@ -92,7 +92,7 @@ export class IndustryService {
   /**
    * Propagate copy of industries list through subject
    */
-  private propagate() {
-    this.industriesSub.next([...this.industries]);
+  public propagate() {
+    this.industriesSub.next([ ...this.industries ]);
   }
 }

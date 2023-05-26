@@ -23,36 +23,62 @@ describe('IndustryDialogComponent', () => {
     updateIndustry: jest.fn()
   };
 
-  beforeEach(async () => {
+  const beforeTest = async (dialogData: any = dialogDataMock) => {
     await TestBed.configureTestingModule({
       declarations: [ IndustryDialogComponent ],
       imports: [FormsModule],
       providers: [
         { provide: MatDialogRef, useValue: matDialogRefMock },
-        { provide: MAT_DIALOG_DATA, useValue: dialogDataMock },
+        { provide: MAT_DIALOG_DATA, useValue: dialogData },
         { provide: IndustryService, useValue: industryServiceMock }]
     })
     .compileComponents();
 
     fixture = TestBed.createComponent(IndustryDialogComponent);
     component = fixture.componentInstance;
+    component.ngOnInit();
     fixture.detectChanges();
-  });
+  };
 
-  it('should create', () => {
+  it('should create', async () => {
+    await beforeTest();
     expect(component).toBeTruthy();
   });
 
-  it('should perform addition', () => {
+  it('should perform addition', async () => {
+    await beforeTest();
+    industryServiceMock.addIndustry.mockClear();
+
     const submitBtn = fixture.debugElement.query(By.css("button.btn.primary"));
     submitBtn.nativeElement.click();
+    
     expect(industryServiceMock.addIndustry).toHaveBeenCalled();
   })
 
-  it('should perform modification', () => {
-    component.data.type = 'modify';
+  it('should perform modification', async () => {
+    await beforeTest({
+      ...dialogDataMock,
+      type: 'modify'
+    });
+    industryServiceMock.addIndustry.mockClear();
+    
     const submitBtn = fixture.debugElement.query(By.css("button.btn.primary"));
     submitBtn.nativeElement.click();
-    expect(industryServiceMock.addIndustry).toHaveBeenCalled();
+    console.log("DATA",component.data.type)
+
+    expect(industryServiceMock.updateIndustry).toHaveBeenCalled();
+  });
+
+  it('should not submit', async () => {
+    await beforeTest({
+      ...dialogDataMock,
+      item: { name: '' }
+    });
+    industryServiceMock.addIndustry.mockClear();
+
+    const submitBtn = fixture.debugElement.query(By.css("button.btn.primary"));
+    submitBtn.nativeElement.click();
+
+    expect(industryServiceMock.addIndustry).not.toBeCalled();
   })
 });

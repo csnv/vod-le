@@ -33,7 +33,7 @@ export class IndustryListComponent implements OnInit, OnDestroy {
   /* Pagination */
   currentPage = 1;
   totalPages = 0;
-  ITEMS_PER_PAGE = 2;
+  ITEMS_PER_PAGE = 10;
 
   constructor(
     private industryService: IndustryService,
@@ -94,7 +94,7 @@ export class IndustryListComponent implements OnInit, OnDestroy {
    */
   onModify(item: Industry) {
     this.dialog.open(IndustryDialogComponent, {
-      autoFocus: true,
+      autoFocus: 'input',
       data: {
         type: 'modify',
         title: 'Modifying ' + item.name,

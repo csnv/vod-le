@@ -1,36 +1,140 @@
 {
   "industries": [
     {
-      "name": "a",
+      "name": "Stark Industries",
       "id": 1
     },
     {
-      "name": "b",
+      "name": "Ferguson LLC.",
       "id": 2
     },
     {
-      "name": "c",
+      "name": "Bob Clothes",
       "id": 3
     },
     {
-      "name": "d",
+      "name": "Amy And Company",
       "id": 4
     },
     {
-      "name": "e",
+      "name": "Undotex",
       "id": 5
     },
     {
-      "name": "f",
+      "name": "Cerillician",
       "id": 6
     },
     {
-      "name": "g",
+      "name": "Jack And Daughters",
       "id": 7
     },
     {
-      "name": "h",
+      "name": "Steel Steeley",
       "id": 8
+    },
+    {
+      "name": "Monstruosity",
+      "id": 9
+    },
+    {
+      "name": "Babel Tower",
+      "id": 10
+    },
+    {
+      "name": "Indux",
+      "id": 11
+    },
+    {
+      "name": "Omelette Red",
+      "id": 12
+    },
+    {
+      "name": "Estupa Briteriana",
+      "id": 13
+    },
+    {
+      "name": "Ducaden",
+      "id": 14
+    },
+    {
+      "name": "Sampung",
+      "id": 15
+    },
+    {
+      "name": "Chayomi",
+      "id": 16
+    },
+    {
+      "name": "Pear",
+      "id": 17
+    },
+    {
+      "name": "Hawaii",
+      "id": 18
+    },
+    {
+      "name": "Guudle",
+      "id": 19
+    },
+    {
+      "name": "Bung",
+      "id": 20
+    },
+    {
+      "name": "Facepaper",
+      "id": 21
+    },
+    {
+      "name": "Appartment Rental",
+      "id": 22
+    },
+    {
+      "name": "Car Rental",
+      "id": 23
+    },
+    {
+      "name": "Consumer Electronics",
+      "id": 24
+    },
+    {
+      "name": "Formal Wear",
+      "id": 25
+    },
+    {
+      "name": "Land Leasing",
+      "id": 26
+    },
+    {
+      "name": "Real Estate",
+      "id": 27
+    },
+    {
+      "name": "Tool And Equipment Rental",
+      "id": 28
+    },
+    {
+      "name": "Building Inspectors",
+      "id": 29
+    },
+    {
+      "name": "Direct Mail Advertising",
+      "id": 30
+    },
+    {
+      "name": "HR Consulting",
+      "id": 31
+    },
+    {
+      "name": "Veterinary Services",
+      "id": 32
+    },
+    {
+      "name": "Coal Mining",
+      "id": 33
+    },
+    {
+      "name": "Steel And Other Metals",
+      "id": 34
     }
   ],
   "devices": []

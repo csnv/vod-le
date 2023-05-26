@@ -3,13 +3,21 @@ import { TestBed } from '@angular/core/testing';
 import { IndustryService } from './industry.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
-import api from '../../../api/db.json';
 import { environment } from '../../environments/environment';
 import { Industry } from './industry.model';
+
 
 describe('IndustryService', () => {
   let service: IndustryService;
   let httpController: HttpTestingController;
+  const industriesList: Industry[] = [
+    { id: 0, name: 'Abc 1'},
+    { id: 1, name: 'Def 6'},
+    { id: 2, name: 'Hij 7'},
+    { id: 3, name: 'Klm 8'},
+    { id: 4, name: 'Nop 9'},
+    { id: 5, name: 'Qrs 10'},
+  ];
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -29,12 +37,12 @@ describe('IndustryService', () => {
       url: environment.api + '/industries'
     })
 
-    request.flush(api.industries);
+    request.flush(industriesList);
   });
 
   it('get the same number of items', () => {
     service.getIndustries().subscribe((industries) => {
-      expect(industries).toEqual(api.industries);
+      expect(industries).toEqual(industriesList);
     });
   });
 
@@ -49,9 +57,9 @@ describe('IndustryService', () => {
   });
 
   it('update an existing item', () => {
-    const length = api.industries.length;
+    const length = industriesList.length;
     const randomIndex = Math.floor(Math.random() * length);
-    const randomitem = api.industries[randomIndex] as Industry;
+    const randomitem = industriesList[randomIndex] as Industry;
     const clone = {...randomitem};
 
     clone.name = 'Test name';
@@ -63,8 +71,8 @@ describe('IndustryService', () => {
   });
   
   it('remove an existing item', () => {
-    const startingLength = api.industries.length;
-    service.removeIndustry(api.industries[0]);
+    const startingLength = industriesList.length;
+    service.removeIndustry(industriesList[0]);
     service.getIndustries().subscribe(industries => {
       expect(industries.length).toBe(startingLength - 1);
     })

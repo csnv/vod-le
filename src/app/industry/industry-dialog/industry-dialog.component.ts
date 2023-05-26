@@ -1,4 +1,4 @@
-import {  Component, ElementRef, Inject, ViewChild } from '@angular/core';
+import {  Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { IndustryService } from '../industry.service';
 import { NgForm } from '@angular/forms';
@@ -16,7 +16,7 @@ export interface IndustryDialogData {
     './industry-dialog.component.scss'
   ]
 })
-export class IndustryDialogComponent {
+export class IndustryDialogComponent implements OnInit {
   /* Current form */
   @ViewChild('form') form!: NgForm;
   /* Name input */
@@ -28,14 +28,19 @@ export class IndustryDialogComponent {
    * Create dialog and inject data
    * @param dialogRef Current dialog reference
    * @param data Dialog data, including mat dialog
-   * @param industryService 
+   * @param industryService Industry entity
    */
   constructor(
     public dialogRef: MatDialogRef<IndustryDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: IndustryDialogData,
     private industryService: IndustryService
-  ) {
-    const item = data.item || {};
+  ) {}
+
+  /**
+   * Copy item data, if any
+   */
+  ngOnInit() {
+    const item = this.data.item || {};
     this.item = { ...item };
   }
 

@@ -18,7 +18,7 @@ export class IndustryComponent {
    */
   onAdd() {
     this.dialog.open(IndustryDialogComponent, {
-      autoFocus: true,
+      autoFocus: 'input',
       data: {
         type: 'add',
         title: 'New Industry'
