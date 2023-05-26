@@ -18,6 +18,7 @@ import { IndustryListComponent } from './industry/industry-list/industry-list.co
 import { IndustryDialogComponent } from './industry/industry-dialog/industry-dialog.component';
 
 import { DeviceComponent } from './device/device.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DeviceComponent } from './device/device.component';
     SortPipe,
     IndustryDialogComponent,
     PaginatePipe,
-    PaginationComponent
+    PaginationComponent,
+    HomeComponent
   ],
   imports: [
     FormsModule,

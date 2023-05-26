@@ -38,9 +38,20 @@ describe('PaginationComponent', () => {
     jest.spyOn(component.pageChanged, 'emit');
 
     component.current = 3;
+    component.total = 12;
     component.onPreviousPage();
 
     expect(component.pageChanged.emit).toHaveBeenCalledWith(2);
+  });
+
+  it('do not call pageChanged on previous', () => {
+    jest.spyOn(component.pageChanged, 'emit');
+
+    component.current = 1;
+    component.total = 12;
+    component.onPreviousPage();
+
+    expect(component.pageChanged.emit).not.toHaveBeenCalled();
   });
 
   it('call pageChanged on next', () => {
@@ -48,9 +59,21 @@ describe('PaginationComponent', () => {
     jest.spyOn(component.pageChanged, 'emit');
 
     component.current = 3;
+    component.total = 12;
     component.onNextPage();
 
     expect(component.pageChanged.emit).toHaveBeenCalledWith(4);
+  });
+
+  it('do not call pageChanged on next', () => {
+    
+    jest.spyOn(component.pageChanged, 'emit');
+
+    component.current = 12;
+    component.total = 12;
+    component.onNextPage();
+
+    expect(component.pageChanged.emit).not.toHaveBeenCalled();
   });
 
   it('call pageChanged on page', () => {
