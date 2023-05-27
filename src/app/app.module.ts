@@ -19,7 +19,6 @@ import { IndustryDialogComponent } from './industry/industry-dialog/industry-dia
 
 import { DeviceComponent } from './device/device.component';
 import { HomeComponent } from './home/home.component';
-
 @NgModule({
   declarations: [
     AppComponent,

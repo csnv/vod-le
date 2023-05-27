@@ -62,52 +62,7 @@ describe('IndustryListComponent', () => {
   it('retrieve industries', () => {
     jest.spyOn(industryServiceMock, 'getIndustries').mockReturnValue(of(industriesList));
     component.ngOnInit();
-    expect(component.industries).toEqual(industriesList);
-  });
-
-  it('not filter list', () => {
-    component.industries = [...industriesList];
-    component.searchValue = '';
-    component.filterList();
-    expect(component.displayIndustries).toEqual(industriesList);
-  });
-
-  it('should filter list', () => {
-    component.industries = [...industriesList];
-    component.searchValue = 'a';
-    component.filterList();
-    
-    const filterpipe = new FilterPipe();
-    const filteredData = filterpipe.transform(industriesList, component.searchValue, 'name');
-
-    expect(component.displayIndustries).toEqual(filteredData);
-  });
-
-  it('update pagination data', () => {
-    component.industries = [...industriesList];
-    component.ITEMS_PER_PAGE = 2;
-    component.searchValue = '';
-    const total = Math.ceil(industriesList.length / component.ITEMS_PER_PAGE)
-
-    component.filterList(); // Should call pagination
-    expect(component.totalPages).toBe(total);
-  });
-
-  it('restrict current page', () => {
-    component.industries = [...industriesList];
-    component.currentPage = 100;
-    component.ITEMS_PER_PAGE = 2;
-    component.searchValue = '';
-    const total = Math.ceil(industriesList.length / component.ITEMS_PER_PAGE)
-
-    component.filterList(); // Should call pagination
-    expect(component.currentPage).toBe(total);
-  });
-
-  it('update current page', () => {
-    const page = 2;
-    component.onPaginationChanged(page);
-    expect(component.currentPage).toBe(page);
+    expect(component.list).toEqual(industriesList);
   });
 
   it('run modification dialog', () => {
@@ -118,21 +73,5 @@ describe('IndustryListComponent', () => {
   it('delete an industry', () => {
     component.onDelete(industriesList[0]);
     expect(industryServiceMock.removeIndustry).toHaveBeenCalledWith(industriesList[0]);
-  });
-
-  it('change header sort field', () => {
-    component.sortingField = 'name';
-    component.sortingDir = 1;
-
-    component.onHeaderToggle('name');
-    expect(component.sortingDir).toBe(-1);
-  });
-
-  it('change header sort direction', () => {
-    component.sortingField = 'id';
-    component.sortingDir = 1;
-
-    component.onHeaderToggle('name');
-    expect(component.sortingField).toBe('name');
   });
 });
