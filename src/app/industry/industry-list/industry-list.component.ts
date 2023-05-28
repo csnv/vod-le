@@ -3,8 +3,9 @@ import { Industry } from '../industry.model';
 import { IndustryService } from '../industry.service';
 import { MatDialog } from '@angular/material/dialog';
 import { IndustryDialogComponent } from '../industry-dialog/industry-dialog.component';
-import { FilterPipe } from '../../shared/pipes/filter/filter.pipe';
 import { Subscription } from 'rxjs';
+import { BaseList } from '../../shared/bases/base-list';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-industry-list',
@@ -14,77 +15,28 @@ import { Subscription } from 'rxjs';
     './industry-list.component.scss'
   ]
 })
-export class IndustryListComponent implements OnInit, OnDestroy {
-  /* List of industries */
-  industries: Industry[] = [];
-  /* List of industries for display */
-  displayIndustries: Industry[] = [];
+export class IndustryListComponent extends BaseList<Industry> implements OnInit, OnDestroy {
   /* Industry service subscription */
   industryServiceSub!: Subscription;
-
-  /* Searching variables */
-  searchValue = "";
-  filterPipe = new FilterPipe();
-
-  /* Sorting values: field and direction */
-  sortingField = 'id';
-  sortingDir = 1;
-
-  /* Pagination */
-  currentPage = 1;
-  totalPages = 0;
-  ITEMS_PER_PAGE = 10;
+  /* Overriden settings */
+  override sortingField: string = 'id';
 
   constructor(
     private industryService: IndustryService,
-    public dialog: MatDialog
-  ) {}
+    public dialog: MatDialog,
+    private router: Router
+  ) {
+    super();
+  }
 
   /**
    * Subscribe to service (ngrx style)
    */
   ngOnInit(): void {
     this.industryServiceSub = this.industryService.getIndustries().subscribe(industries => {
-      this.industries = industries;
+      this.list = industries;
       this.filterList();
     });
-  }
-
-  /**
-   * Filter original industry list by query
-   */
-  filterList() {
-    if (this.searchValue === "") {
-      this.displayIndustries = [ ...this.industries ];
-    } else {
-      this.displayIndustries = this.filterPipe.transform(this.industries, this.searchValue, 'name');
-    }
-
-    this.updatePagination();
-  }
-
-  /**
-   * Update pagination related variables (mostly after updating displayIndustries)
-   */
-  updatePagination() {
-    const length = this.displayIndustries.length;
-    this.totalPages = Math.ceil(length / this.ITEMS_PER_PAGE);
-
-    if (this.currentPage >= this.totalPages) {
-      this.currentPage = this.totalPages;
-    }
-
-    if (this.currentPage === 0) {
-      this.currentPage = 1;
-    }
-  }
-
-  /**
-   * User selected another page
-   * @param page Selected page
-   */
-  onPaginationChanged(page: number) {
-    this.currentPage = page;
   }
 
   /**
@@ -111,22 +63,17 @@ export class IndustryListComponent implements OnInit, OnDestroy {
   onDelete(item: Industry) {
     this.industryService.removeIndustry(item);
   }
-  
-  /**
-   * User clicks on a table header label
-   * Changes the field used by sorting or toggles the direction of sorting order
-   * @param key Table field
-   */
-  onHeaderToggle(key: string) {
-    // User clicks on already ordered field, just toggle the direction
-    if (this.sortingField === key) {
-      this.sortingDir *= -1;
-      return;
-    }
 
-    // Otherwise order by new field and reset direction
-    this.sortingField = key;
-    this.sortingDir = 1;
+  /**
+   * Nav to devices list and filter by industry
+   * @param industryId Selected industry Id
+   */
+  goToRelatedDevices(industryId: number) {
+    this.router.navigate(['/devices'], {
+      queryParams: {
+        industryId
+      }
+    });
   }
 
   /**

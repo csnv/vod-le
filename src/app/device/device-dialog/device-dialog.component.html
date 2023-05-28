@@ -1,0 +1,36 @@
+<div class="dialog">
+  <section class="title">
+    <h2>{{ data.title }}</h2>
+    <button class="close" (click)="onClose()" autofocus="false"></button>
+  </section>
+  <section class="content">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <div class="group">
+        <label for="name">Name*</label>
+        <input name="name" type="text" [(ngModel)]="item.name" required>
+        <span *ngIf="form.submitted && form.controls.name.invalid" class="error">Required field</span>
+      </div>
+      <div class="group">
+        <label for="quantity">Quantity*</label>
+        <input name="quantity" type="number" min="1" max="100" [(ngModel)]="item.quantity" required>
+        <span *ngIf="form.submitted && form.controls.quantity.errors?.required" class="error">Required field</span>
+        <span *ngIf="form.submitted && form.controls.quantity.errors?.max" class="error">Cannot submit more than 100 devices</span>
+      </div>
+      <div class="group">
+        <label for="fee">Fee*</label>
+        <input name="fee" type="number" min="0" step="any" [(ngModel)]="item.fee" required>
+        <span *ngIf="form.submitted && form.controls.fee.invalid" class="error">Required field</span>
+      </div>
+      <div class="group">
+        <label for="industry">Industry*</label>
+        <select name="industry" [(ngModel)]="item.industryId" required>
+          <option *ngFor="let industry of industryList | sort : 'name'" [value]="industry.id">{{ industry.name }}</option>
+        </select>
+        <span *ngIf="form.submitted && form.controls.industry.invalid" class="error">Required field</span>
+      </div>
+      <div class="buttons">
+        <button type="submit" class="btn primary">Submit</button>
+      </div>
+    </form>
+  </section>
+</div>

@@ -2,7 +2,7 @@ export interface Device {
   id: number,
   name: string,
   additionTime: string,
-  amount: number,
+  quantity: number,
   fee: number,
   industryId: number
 };

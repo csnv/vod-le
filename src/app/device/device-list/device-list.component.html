@@ -1,16 +1,12 @@
 <div class="search-container">
-  <input class="search" [(ngModel)]="searchValue" (ngModelChange)="filterList()"placeholder="Search By Industry Name">
+  <input class="search" [(ngModel)]="searchValue" (ngModelChange)="filterList()"placeholder="Search By Device Name">
 </div>
 
 <table>
   <thead>
     <ng-template #header let-name="name" let-key="key">
       <th>
-        <span
-        class="toggeable"
-        (click)="onHeaderToggle(key)">
-          {{ name }}
-        </span>
+        <span class="toggeable" (click)="onHeaderToggle(key)">{{ name }}</span>
         <img
           class="order-icon"
           *ngIf="sortingField === key"
@@ -20,6 +16,10 @@
     </ng-template>
     <ng-container *ngTemplateOutlet="header; context: { name: 'Code', key: 'id' }"></ng-container>
     <ng-container *ngTemplateOutlet="header; context: { name: 'Name', key: 'name' }"></ng-container>
+    <ng-container *ngTemplateOutlet="header; context: { name: 'Registration', key: 'additionTime' }"></ng-container>
+    <ng-container *ngTemplateOutlet="header; context: { name: 'Quantity', key: 'quantity' }"></ng-container>
+    <ng-container *ngTemplateOutlet="header; context: { name: 'Fee', key: 'fee' }"></ng-container>
+    <ng-container *ngTemplateOutlet="header; context: { name: 'Industry', key: 'industryId' }"></ng-container>
     <th>
       <span>Actions</span>
     </th>
@@ -32,11 +32,17 @@
     ">
       <td>{{ item.id }}</td>
       <td>{{ item.name }}</td>
-      <td class="actions-list">
-        <button class="btn primary" (click)="goToRelatedDevices(item.id)">See Devices</button>
+      <td>{{ item.additionTime | date : 'dd/MM/yy HH:mm ' }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>{{ item.fee | currency }}</td>
+      <td>{{ item.industryId | identify : industriesList : 'id' : 'name' }}</td>
+      <td>
         <span class="action" (click)="onModify(item)">Modify</span>
         <span class="action danger" (click)="onDelete(item)">Delete</span>
       </td>
+    </tr>
+    <tr *ngIf="displayList.length === 0" class="empty">
+      <td colspan="7" >No results</td>
     </tr>
   </tbody>
 </table>
