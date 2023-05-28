@@ -2,11 +2,12 @@ import {  Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { IndustryService } from '../industry.service';
 import { NgForm } from '@angular/forms';
+import { Industry } from '../industry.model';
 
 export interface IndustryDialogData {
   type: 'add' | 'modify',
   title: string,
-  item: any
+  item: Industry
 }
 @Component({
   selector: 'app-industry-dialog',
@@ -19,10 +20,8 @@ export interface IndustryDialogData {
 export class IndustryDialogComponent implements OnInit {
   /* Current form */
   @ViewChild('form') form!: NgForm;
-  /* Name input */
-  @ViewChild('nameInput') nameInput!: ElementRef;
   /* Industry item being modified or created */
-  item: any;
+  item!: Industry;
   
   /**
    * Create dialog and inject data

@@ -41,7 +41,9 @@
       margin-bottom: 10px;
     }
 
-    input[type=text] {
+    input[type=text],
+    input[type=number],
+    select {
       width: 100%;
       box-sizing: border-box;
       padding: 12px;

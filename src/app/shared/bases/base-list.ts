@@ -1,5 +1,12 @@
 import { FilterPipe } from "../pipes/filter/filter.pipe";
 
+/**
+ * Base list for components that require:
+ * - Initial filtering
+ * - Sorting
+ * - Pagination
+ * 
+ */
 export class BaseList<T> {
   /* Template variables */
   list!: T[];
@@ -19,7 +26,7 @@ export class BaseList<T> {
   itemsPerPage = 10;
 
   /**
-   * Filter original industry list by query
+   * Filter original list by query
    */
   filterList() {
     if (this.searchValue === "") {
@@ -32,7 +39,7 @@ export class BaseList<T> {
   }
 
   /**
-   * Update pagination related variables (mostly after updating displayIndustries)
+   * Update pagination related variables (mostly after updating displayList)
    */
   updatePagination() {
     const length = this.displayList.length;

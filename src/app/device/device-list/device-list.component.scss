@@ -33,37 +33,35 @@ table {
   }
 
   @include cell-width(1, 10% );
-  @include cell-width(2, 55% );
-  @include cell-width(3, 35% );
+  @include cell-width(2, 30% );
+  @include cell-width(3, 15% );
+  @include cell-width(4, 10% );
+  @include cell-width(5, 10% );
+  @include cell-width(6, 10% );
+  @include cell-width(7, 15% );
+  
+  .action {
+    color: #36c395;
+    cursor: pointer;
+    margin-left: 25px;
 
-  .actions-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-
-    button {
-      flex: 1;      
-      white-space: nowrap;
+    &:first-child {
+      margin-left: 0;
+    }
+    
+    &:hover {
+      text-decoration: underline;
     }
 
-    .action {
-      flex: 1;
-      color: #36c395;
-      cursor: pointer;
-      white-space: nowrap;
-      
-      &:hover {
-        text-decoration: underline;
-      }
-  
-      &.danger {
-        color: red;
-      }
+    &.danger {
+      color: red;
     }
   }
 
+  tr.empty td {
+    text-align: center;
+    font-style: italic;
+  }
 }
 
 .pagination-container {

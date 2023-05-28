@@ -64,7 +64,6 @@ describe('IndustryDialogComponent', () => {
     
     const submitBtn = fixture.debugElement.query(By.css("button.btn.primary"));
     submitBtn.nativeElement.click();
-    console.log("DATA",component.data.type)
 
     expect(industryServiceMock.updateIndustry).toHaveBeenCalled();
   });

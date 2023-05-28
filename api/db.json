@@ -137,5 +137,1615 @@
       "id": 34
     }
   ],
-  "devices": []
+  "devices": [
+    {
+      "id": 0,
+      "name": "Smartwatch",
+      "additionTime": "2023-05-28 10:15:30",
+      "quantity": 50,
+      "fee": 29.99,
+      "industryId": 15
+    },
+    {
+      "id": 1,
+      "name": "Fitness Tracker",
+      "additionTime": "2023-05-28 11:30:45",
+      "quantity": 30,
+      "fee": 19.99,
+      "industryId": 8
+    },
+    {
+      "id": 2,
+      "name": "Smart Glasses",
+      "additionTime": "2023-05-28 12:45:15",
+      "quantity": 20,
+      "fee": 49.99,
+      "industryId": 12
+    },
+    {
+      "id": 3,
+      "name": "Connected Scale",
+      "additionTime": "2023-05-28 14:00:20",
+      "quantity": 40,
+      "fee": 39.99,
+      "industryId": 4
+    },
+    {
+      "id": 4,
+      "name": "Smart Ring",
+      "additionTime": "2023-05-28 15:30:10",
+      "quantity": 15,
+      "fee": 59.99,
+      "industryId": 18
+    },
+    {
+      "id": 5,
+      "name": "Smart Home Hub",
+      "additionTime": "2023-05-28 16:45:55",
+      "quantity": 25,
+      "fee": 79.99,
+      "industryId": 23
+    },
+    {
+      "id": 6,
+      "name": "Health Monitor",
+      "additionTime": "2023-05-28 17:55:40",
+      "quantity": 35,
+      "fee": 49.99,
+      "industryId": 6
+    },
+    {
+      "id": 7,
+      "name": "GPS Tracker",
+      "additionTime": "2023-05-28 19:10:25",
+      "quantity": 10,
+      "fee": 69.99,
+      "industryId": 29
+    },
+    {
+      "id": 8,
+      "name": "Smart Door Lock",
+      "additionTime": "2023-05-28 20:20:30",
+      "quantity": 18,
+      "fee": 99.99,
+      "industryId": 17
+    },
+    {
+      "id": 9,
+      "name": "Smart Thermostat",
+      "additionTime": "2023-05-28 21:35:15",
+      "quantity": 22,
+      "fee": 89.99,
+      "industryId": 19
+    },
+    {
+      "id": 10,
+      "name": "Sleep Tracker",
+      "additionTime": "2023-05-28 22:45:20",
+      "quantity": 12,
+      "fee": 59.99,
+      "industryId": 11
+    },
+    {
+      "id": 11,
+      "name": "Security Camera",
+      "additionTime": "2023-05-28 23:55:10",
+      "quantity": 28,
+      "fee": 129.99,
+      "industryId": 21
+    },
+    {
+      "id": 12,
+      "name": "Smart Mirror",
+      "additionTime": "2023-05-29 01:05:05",
+      "quantity": 8,
+      "fee": 149.99,
+      "industryId": 26
+    },
+    {
+      "id": 13,
+      "name": "Wearable ECG Monitor",
+      "additionTime": "2023-05-29 02:20:45",
+      "quantity": 5,
+      "fee": 199.99,
+      "industryId": 3
+    },
+    {
+      "id": 14,
+      "name": "Smart Sprinkler System",
+      "additionTime": "2023-05-29 03:35:30",
+      "quantity": 15,
+      "fee": 109.99,
+      "industryId": 9
+    },
+    {
+      "id": 15,
+      "name": "Smart Ceiling Fan",
+      "additionTime": "2023-05-29 04:50:20",
+      "quantity": 10,
+      "fee": 79.99,
+      "industryId": 25
+    },
+    {
+      "id": 16,
+      "name": "Bluetooth Tracker",
+      "additionTime": "2023-05-29 06:00:35",
+      "quantity": 40,
+      "fee": 24.99,
+      "industryId": 13
+    },
+    {
+      "id": 17,
+      "name": "Smart Water Bottle",
+      "additionTime": "2023-05-29 07:15:10",
+      "quantity": 20,
+      "fee": 39.99,
+      "industryId": 31
+    },
+    {
+      "id": 18,
+      "name": "Pet Activity Tracker",
+      "additionTime": "2023-05-29 08:25:45",
+      "quantity": 30,
+      "fee": 34.99,
+      "industryId": 7
+    },
+    {
+      "id": 19,
+      "name": "Smart Bike Lock",
+      "additionTime": "2023-05-29 09:40:55",
+      "quantity": 15,
+      "fee": 59.99,
+      "industryId": 22
+    },
+    {
+      "id": 20,
+      "name": "Smart Air Purifier",
+      "additionTime": "2023-05-29 10:55:40",
+      "quantity": 25,
+      "fee": 89.99,
+      "industryId": 30
+    },
+    {
+      "id": 21,
+      "name": "Smart Doorbell",
+      "additionTime": "2023-05-29 12:10:20",
+      "quantity": 18,
+      "fee": 79.99,
+      "industryId": 16
+    },
+    {
+      "id": 22,
+      "name": "Smart Speaker",
+      "additionTime": "2023-05-29 13:25:15",
+      "quantity": 22,
+      "fee": 99.99,
+      "industryId": 24
+    },
+    {
+      "id": 23,
+      "name": "Smart Light Bulb",
+      "additionTime": "2023-05-29 14:40:25",
+      "quantity": 40,
+      "fee": 19.99,
+      "industryId": 27
+    },
+    {
+      "id": 24,
+      "name": "Smart Refrigerator",
+      "additionTime": "2023-05-29 15:55:30",
+      "quantity": 8,
+      "fee": 399.99,
+      "industryId": 14
+    },
+    {
+      "id": 25,
+      "name": "Wireless Earbuds",
+      "additionTime": "2023-05-29 17:10:15",
+      "quantity": 35,
+      "fee": 79.99,
+      "industryId": 2
+    },
+    {
+      "id": 26,
+      "name": "Smart Pet Feeder",
+      "additionTime": "2023-05-29 18:25:50",
+      "quantity": 12,
+      "fee": 89.99,
+      "industryId": 32
+    },
+    {
+      "id": 27,
+      "name": "Robot Vacuum Cleaner",
+      "additionTime": "2023-05-29 19:40:40",
+      "quantity": 20,
+      "fee": 199.99,
+      "industryId": 20
+    },
+    {
+      "id": 28,
+      "name": "Smart Window Blinds",
+      "additionTime": "2023-05-29 20:55:05",
+      "quantity": 15,
+      "fee": 129.99,
+      "industryId": 33
+    },
+    {
+      "id": 29,
+      "name": "Smart Plant Sensor",
+      "additionTime": "2023-05-29 22:10:10",
+      "quantity": 25,
+      "fee": 49.99,
+      "industryId": 10
+    },
+    {
+      "id": 30,
+      "name": "Smart Kitchen Scale",
+      "additionTime": "2023-05-29 23:25:35",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 28
+    },
+    {
+      "id": 31,
+      "name": "Smart Lock",
+      "additionTime": "2023-05-30 00:40:20",
+      "quantity": 18,
+      "fee": 89.99,
+      "industryId": 16
+    },
+    {
+      "id": 32,
+      "name": "Fitness Smart Shirt",
+      "additionTime": "2023-05-30 01:55:15",
+      "quantity": 5,
+      "fee": 79.99,
+      "industryId": 1
+    },
+    {
+      "id": 33,
+      "name": "Smart Garage Door Opener",
+      "additionTime": "2023-05-30 03:10:30",
+      "quantity": 8,
+      "fee": 109.99,
+      "industryId": 34
+    },
+    {
+      "id": 34,
+      "name": "Water Leak Detector",
+      "additionTime": "2023-05-30 04:25:45",
+      "quantity": 15,
+      "fee": 29.99,
+      "industryId": 5
+    },
+    {
+      "id": 35,
+      "name": "Smart Air Conditioner",
+      "additionTime": "2023-05-30 05:40:10",
+      "quantity": 10,
+      "fee": 249.99,
+      "industryId": 31
+    },
+    {
+      "id": 36,
+      "name": "Smart Wristband",
+      "additionTime": "2023-05-30 06:55:55",
+      "quantity": 30,
+      "fee": 49.99,
+      "industryId": 8
+    },
+    {
+      "id": 37,
+      "name": "Smart Coffee Maker",
+      "additionTime": "2023-05-30 08:10:30",
+      "quantity": 12,
+      "fee": 79.99,
+      "industryId": 28
+    },
+    {
+      "id": 38,
+      "name": "Smart Oven",
+      "additionTime": "2023-05-30 09:25:25",
+      "quantity": 8,
+      "fee": 299.99,
+      "industryId": 14
+    },
+    {
+      "id": 39,
+      "name": "Video Doorbell",
+      "additionTime": "2023-05-30 10:40:20",
+      "quantity": 18,
+      "fee": 139.99,
+      "industryId": 16
+    },
+    {
+      "id": 40,
+      "name": "Smart Watering System",
+      "additionTime": "2023-05-30 11:55:45",
+      "quantity": 20,
+      "fee": 89.99,
+      "industryId": 9
+    },
+    {
+      "id": 41,
+      "name": "Smart Pillow",
+      "additionTime": "2023-05-30 13:10:50",
+      "quantity": 8,
+      "fee": 69.99,
+      "industryId": 11
+    },
+    {
+      "id": 42,
+      "name": "Smart Plant Pot",
+      "additionTime": "2023-05-30 14:25:35",
+      "quantity": 15,
+      "fee": 59.99,
+      "industryId": 10
+    },
+    {
+      "id": 43,
+      "name": "Smart Microwave",
+      "additionTime": "2023-05-30 15:40:30",
+      "quantity": 10,
+      "fee": 199.99,
+      "industryId": 14
+    },
+    {
+      "id": 44,
+      "name": "Smart Car Charger",
+      "additionTime": "2023-05-30 16:55:55",
+      "quantity": 25,
+      "fee": 34.99,
+      "industryId": 13
+    },
+    {
+      "id": 45,
+      "name": "Smart Faucet",
+      "additionTime": "2023-05-30 18:10:40",
+      "quantity": 10,
+      "fee": 129.99,
+      "industryId": 31
+    },
+    {
+      "id": 46,
+      "name": "Smart Luggage",
+      "additionTime": "2023-05-30 19:25:55",
+      "quantity": 15,
+      "fee": 159.99,
+      "industryId": 33
+    },
+    {
+      "id": 47,
+      "name": "Wearable Blood Pressure Monitor",
+      "additionTime": "2023-05-30 20:40:10",
+      "quantity": 5,
+      "fee": 149.99,
+      "industryId": 3
+    },
+    {
+      "id": 48,
+      "name": "Smart Security System",
+      "additionTime": "2023-05-30 21:55:25",
+      "quantity": 20,
+      "fee": 179.99,
+      "industryId": 21
+    },
+    {
+      "id": 49,
+      "name": "Smart Umbrella",
+      "additionTime": "2023-05-30 23:10:20",
+      "quantity": 8,
+      "fee": 49.99,
+      "industryId": 33
+    },
+    {
+      "id": 50,
+      "name": "Smart Smoke Detector",
+      "additionTime": "2023-05-31 00:25:45",
+      "quantity": 12,
+      "fee": 69.99,
+      "industryId": 21
+    },
+    {
+      "id": 51,
+      "name": "Smart Desk Lamp",
+      "additionTime": "2023-05-31 01:40:30",
+      "quantity": 15,
+      "fee": 39.99,
+      "industryId": 27
+    },
+    {
+      "id": 52,
+      "name": "Smart Sunscreen",
+      "additionTime": "2023-05-31 02:55:35",
+      "quantity": 5,
+      "fee": 49.99,
+      "industryId": 31
+    },
+    {
+      "id": 53,
+      "name": "Smart Wallet",
+      "additionTime": "2023-05-31 04:10:20",
+      "quantity": 10,
+      "fee": 79.99,
+      "industryId": 22
+    },
+    {
+      "id": 54,
+      "name": "Smart Garden",
+      "additionTime": "2023-05-31 05:25:15",
+      "quantity": 18,
+      "fee": 129.99,
+      "industryId": 10
+    },
+    {
+      "id": 55,
+      "name": "Smart Home Security Camera",
+      "additionTime": "2023-05-31 06:40:45",
+      "quantity": 25,
+      "fee": 99.99,
+      "industryId": 21
+    },
+    {
+      "id": 56,
+      "name": "Smart Surfboard",
+      "additionTime": "2023-05-31 07:55:50",
+      "quantity": 2,
+      "fee": 299.99,
+      "industryId": 34
+    },
+    {
+      "id": 57,
+      "name": "Smart Toothbrush",
+      "additionTime": "2023-05-31 09:10:35",
+      "quantity": 20,
+      "fee": 49.99,
+      "industryId": 28
+    },
+    {
+      "id": 58,
+      "name": "Smart Running Shoes",
+      "additionTime": "2023-05-31 10:25:40",
+      "quantity": 8,
+      "fee": 129.99,
+      "industryId": 1
+    },
+    {
+      "id": 59,
+      "name": "Smart Pet Door",
+      "additionTime": "2023-05-31 11:40:25",
+      "quantity": 10,
+      "fee": 79.99,
+      "industryId": 7
+    },
+    {
+      "id": 60,
+      "name": "Smart Electric Toothbrush",
+      "additionTime": "2023-05-31 12:55:55",
+      "quantity": 15,
+      "fee": 89.99,
+      "industryId": 28
+    },
+    {
+      "id": 61,
+      "name": "Smart Bike Lock",
+      "additionTime": "2023-05-31 14:10:30",
+      "quantity": 10,
+      "fee": 49.99,
+      "industryId": 13
+    },
+    {
+      "id": 62,
+      "name": "Smart Air Purifier",
+      "additionTime": "2023-05-31 15:25:35",
+      "quantity": 8,
+      "fee": 129.99,
+      "industryId": 31
+    },
+    {
+      "id": 63,
+      "name": "Smart Mirror",
+      "additionTime": "2023-05-31 16:40:20",
+      "quantity": 12,
+      "fee": 199.99,
+      "industryId": 27
+    },
+    {
+      "id": 64,
+      "name": "Smart Fire Alarm",
+      "additionTime": "2023-05-31 17:55:15",
+      "quantity": 15,
+      "fee": 79.99,
+      "industryId": 21
+    },
+    {
+      "id": 65,
+      "name": "Smart Water Bottle",
+      "additionTime": "2023-05-31 19:10:40",
+      "quantity": 10,
+      "fee": 29.99,
+      "industryId": 9
+    },
+    {
+      "id": 66,
+      "name": "Smart Door Lock",
+      "additionTime": "2023-05-31 20:25:55",
+      "quantity": 18,
+      "fee": 89.99,
+      "industryId": 16
+    },
+    {
+      "id": 67,
+      "name": "Smart Thermostat",
+      "additionTime": "2023-05-31 21:40:30",
+      "quantity": 25,
+      "fee": 149.99,
+      "industryId": 31
+    },
+    {
+      "id": 68,
+      "name": "Smart Speaker",
+      "additionTime": "2023-05-31 22:55:45",
+      "quantity": 20,
+      "fee": 99.99,
+      "industryId": 22
+    },
+    {
+      "id": 69,
+      "name": "Smart Robot Toy",
+      "additionTime": "2023-06-01 00:10:20",
+      "quantity": 8,
+      "fee": 59.99,
+      "industryId": 32
+    },
+    {
+      "id": 70,
+      "name": "Smart Power Strip",
+      "additionTime": "2023-06-01 01:25:15",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 27
+    },
+    {
+      "id": 71,
+      "name": "Smart Video Projector",
+      "additionTime": "2023-06-01 02:40:40",
+      "quantity": 5,
+      "fee": 299.99,
+      "industryId": 17
+    },
+    {
+      "id": 72,
+      "name": "Smart Air Fryer",
+      "additionTime": "2023-06-01 03:55:55",
+      "quantity": 12,
+      "fee": 119.99,
+      "industryId": 14
+    },
+    {
+      "id": 73,
+      "name": "Smart Pet Feeder",
+      "additionTime": "2023-06-01 05:10:30",
+      "quantity": 15,
+      "fee": 69.99,
+      "industryId": 7
+    },
+    {
+      "id": 74,
+      "name": "Smart Weight Scale",
+      "additionTime": "2023-06-01 06:25:25",
+      "quantity": 8,
+      "fee": 49.99,
+      "industryId": 3
+    },
+    {
+      "id": 75,
+      "name": "Smart Security Doorbell",
+      "additionTime": "2023-06-01 07:40:20",
+      "quantity": 18,
+      "fee": 179.99,
+      "industryId": 16
+    },
+    {
+      "id": 76,
+      "name": "Smart Toothpaste Dispenser",
+      "additionTime": "2023-06-01 08:55:45",
+      "quantity": 10,
+      "fee": 19.99,
+      "industryId": 28
+    },
+    {
+      "id": 77,
+      "name": "Smart Clothes Hanger",
+      "additionTime": "2023-06-01 10:10:50",
+      "quantity": 15,
+      "fee": 39.99,
+      "industryId": 26
+    },
+    {
+      "id": 78,
+      "name": "Smart Bicycle Helmet",
+      "additionTime": "2023-06-01 11:25:35",
+      "quantity": 8,
+      "fee": 79.99,
+      "industryId": 1
+    },
+    {
+      "id": 79,
+      "name": "Smart Tea Kettle",
+      "additionTime": "2023-06-01 12:40:30",
+      "quantity": 12,
+      "fee": 69.99,
+      "industryId": 28
+    },
+    {
+      "id": 80,
+      "name": "Smart Rice Cooker",
+      "additionTime": "2023-06-01 13:55:55",
+      "quantity": 10,
+      "fee": 89.99,
+      "industryId": 14
+    },
+    {
+      "id": 81,
+      "name": "Smart Garbage Can",
+      "additionTime": "2023-06-01 15:10:40",
+      "quantity": 15,
+      "fee": 59.99,
+      "industryId": 26
+    },
+    {
+      "id": 82,
+      "name": "Smart Cutting Board",
+      "additionTime": "2023-06-01 16:25:55",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 26
+    },
+    {
+      "id": 83,
+      "name": "Smart Wine Opener",
+      "additionTime": "2023-06-01 17:40:50",
+      "quantity": 5,
+      "fee": 29.99,
+      "industryId": 18
+    },
+    {
+      "id": 84,
+      "name": "Smart Indoor Camera",
+      "additionTime": "2023-06-01 18:55:35",
+      "quantity": 18,
+      "fee": 99.99,
+      "industryId": 21
+    },
+    {
+      "id": 85,
+      "name": "Smart Coffee Maker",
+      "additionTime": "2023-06-01 20:10:30",
+      "quantity": 25,
+      "fee": 79.99,
+      "industryId": 14
+    },
+    {
+      "id": 86,
+      "name": "Smart Wireless Charger",
+      "additionTime": "2023-06-01 21:25:45",
+      "quantity": 20,
+      "fee": 49.99,
+      "industryId": 2
+    },
+    {
+      "id": 87,
+      "name": "Smart Pet Tracker",
+      "additionTime": "2023-06-01 22:40:20",
+      "quantity": 8,
+      "fee": 89.99,
+      "industryId": 7
+    },
+    {
+      "id": 88,
+      "name": "Smart Plant Sensor",
+      "additionTime": "2023-06-01 23:55:25",
+      "quantity": 12,
+      "fee": 39.99,
+      "industryId": 10
+    },
+    {
+      "id": 89,
+      "name": "Smart Wireless Earbuds",
+      "additionTime": "2023-06-02 01:10:50",
+      "quantity": 15,
+      "fee": 129.99,
+      "industryId": 22
+    },
+    {
+      "id": 90,
+      "name": "Smart Portable Printer",
+      "additionTime": "2023-06-02 02:25:45",
+      "quantity": 10,
+      "fee": 199.99,
+      "industryId": 17
+    },
+    {
+      "id": 91,
+      "name": "Smart Air Conditioner",
+      "additionTime": "2023-06-02 03:40:30",
+      "quantity": 8,
+      "fee": 299.99,
+      "industryId": 31
+    },
+    {
+      "id": 92,
+      "name": "Smart Water Leak Detector",
+      "additionTime": "2023-06-02 04:55:55",
+      "quantity": 12,
+      "fee": 69.99,
+      "industryId": 21
+    },
+    {
+      "id": 93,
+      "name": "Smart BBQ Grill",
+      "additionTime": "2023-06-02 06:10:40",
+      "quantity": 5,
+      "fee": 149.99,
+      "industryId": 14
+    },
+    {
+      "id": 94,
+      "name": "Smart Bedside Lamp",
+      "additionTime": "2023-06-02 07:25:35",
+      "quantity": 18,
+      "fee": 49.99,
+      "industryId": 27
+    },
+    {
+      "id": 95,
+      "name": "Smart Garage Door Opener",
+      "additionTime": "2023-06-02 08:40:20",
+      "quantity": 10,
+      "fee": 99.99,
+      "industryId": 16
+    },
+    {
+      "id": 96,
+      "name": "Smart Blender",
+      "additionTime": "2023-06-02 09:55:45",
+      "quantity": 15,
+      "fee": 79.99,
+      "industryId": 14
+    },
+    {
+      "id": 97,
+      "name": "Smart Window Shades",
+      "additionTime": "2023-06-02 11:10:50",
+      "quantity": 20,
+      "fee": 89.99,
+      "industryId": 25
+    },
+    {
+      "id": 98,
+      "name": "Smart Pet Fountain",
+      "additionTime": "2023-06-02 12:25:35",
+      "quantity": 8,
+      "fee": 59.99,
+      "industryId": 7
+    },
+    {
+      "id": 99,
+      "name": "Smart GPS Tracker",
+      "additionTime": "2023-06-02 13:40:30",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 18
+    },
+    {
+      "id": 100,
+      "name": "Smart UV Sanitizer",
+      "additionTime": "2023-06-02 14:55:55",
+      "quantity": 15,
+      "fee": 29.99,
+      "industryId": 29
+    },
+    {
+      "id": 101,
+      "name": "Smart Air Quality Monitor",
+      "additionTime": "2023-06-02 16:10:40",
+      "quantity": 10,
+      "fee": 79.99,
+      "industryId": 31
+    },
+    {
+      "id": 102,
+      "name": "Smart Plant Watering System",
+      "additionTime": "2023-06-02 17:25:45",
+      "quantity": 8,
+      "fee": 129.99,
+      "industryId": 10
+    },
+    {
+      "id": 103,
+      "name": "Smart Garage Door Sensor",
+      "additionTime": "2023-06-02 18:40:20",
+      "quantity": 12,
+      "fee": 39.99,
+      "industryId": 16
+    },
+    {
+      "id": 104,
+      "name": "Smart Wine Cooler",
+      "additionTime": "2023-06-02 19:55:25",
+      "quantity": 15,
+      "fee": 149.99,
+      "industryId": 18
+    },
+    {
+      "id": 105,
+      "name": "Smart Garden Irrigation System",
+      "additionTime": "2023-06-02 21:10:50",
+      "quantity": 10,
+      "fee": 199.99,
+      "industryId": 10
+    },
+    {
+      "id": 106,
+      "name": "Smart Electric Blanket",
+      "additionTime": "2023-06-02 22:25:45",
+      "quantity": 8,
+      "fee": 299.99,
+      "industryId": 23
+    },
+    {
+      "id": 107,
+      "name": "Smart Voice Assistant",
+      "additionTime": "2023-06-02 23:40:30",
+      "quantity": 12,
+      "fee": 69.99,
+      "industryId": 22
+    },
+    {
+      "id": 108,
+      "name": "Smart Plant Grow Light",
+      "additionTime": "2023-06-03 00:55:55",
+      "quantity": 10,
+      "fee": 59.99,
+      "industryId": 10
+    },
+    {
+      "id": 109,
+      "name": "Smart Video Doorbell",
+      "additionTime": "2023-06-03 02:10:40",
+      "quantity": 15,
+      "fee": 49.99,
+      "industryId": 16
+    },
+    {
+      "id": 110,
+      "name": "Smart Air Humidifier",
+      "additionTime": "2023-06-03 03:25:35",
+      "quantity": 8,
+      "fee": 89.99,
+      "industryId": 31
+    },
+    {
+      "id": 111,
+      "name": "Smart Pet Training Collar",
+      "additionTime": "2023-06-03 04:40:20",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 7
+    },
+    {
+      "id": 112,
+      "name": "Smart Sleep Tracker",
+      "additionTime": "2023-06-03 05:55:55",
+      "quantity": 15,
+      "fee": 29.99,
+      "industryId": 23
+    },
+    {
+      "id": 113,
+      "name": "Smart Bathroom Scale",
+      "additionTime": "2023-06-03 07:10:50",
+      "quantity": 20,
+      "fee": 79.99,
+      "industryId": 3
+    },
+    {
+      "id": 114,
+      "name": "Smart Security Camera",
+      "additionTime": "2023-06-03 08:25:35",
+      "quantity": 18,
+      "fee": 99.99,
+      "industryId": 16
+    },
+    {
+      "id": 115,
+      "name": "Smart Wireless Speaker",
+      "additionTime": "2023-06-03 09:40:20",
+      "quantity": 12,
+      "fee": 129.99,
+      "industryId": 22
+    },
+    {
+      "id": 116,
+      "name": "Smart Coffee Grinder",
+      "additionTime": "2023-06-03 10:55:45",
+      "quantity": 10,
+      "fee": 49.99,
+      "industryId": 14
+    },
+    {
+      "id": 117,
+      "name": "Smart Door Lock",
+      "additionTime": "2023-06-03 12:10:40",
+      "quantity": 15,
+      "fee": 89.99,
+      "industryId": 16
+    },
+    {
+      "id": 118,
+      "name": "Smart Air Purifier",
+      "additionTime": "2023-06-03 13:25:55",
+      "quantity": 8,
+      "fee": 179.99,
+      "industryId": 31
+    },
+    {
+      "id": 119,
+      "name": "Smart Pet Camera",
+      "additionTime": "2023-06-03 14:40:50",
+      "quantity": 10,
+      "fee": 69.99,
+      "industryId": 7
+    },
+    {
+      "id": 120,
+      "name": "Smart Remote Control",
+      "additionTime": "2023-06-03 15:55:35",
+      "quantity": 12,
+      "fee": 39.99,
+      "industryId": 25
+    },
+    {
+      "id": 121,
+      "name": "Smart Kitchen Scale",
+      "additionTime": "2023-06-03 17:10:40",
+      "quantity": 15,
+      "fee": 49.99,
+      "industryId": 26
+    },
+    {
+      "id": 122,
+      "name": "Smart Robotic Vacuum Cleaner",
+      "additionTime": "2023-06-03 18:25:25",
+      "quantity": 10,
+      "fee": 149.99,
+      "industryId": 24
+    },
+    {
+      "id": 123,
+      "name": "Smart Video Baby Monitor",
+      "additionTime": "2023-06-03 19:40:30",
+      "quantity": 8,
+      "fee": 129.99,
+      "industryId": 19
+    },
+    {
+      "id": 124,
+      "name": "Smart Thermostat",
+      "additionTime": "2023-06-03 20:55:55",
+      "quantity": 12,
+      "fee": 99.99,
+      "industryId": 31
+    },
+    {
+      "id": 125,
+      "name": "Smart Bluetooth Tracker",
+      "additionTime": "2023-06-03 22:10:40",
+      "quantity": 10,
+      "fee": 29.99,
+      "industryId": 18
+    },
+    {
+      "id": 126,
+      "name": "Smart Sous Vide Cooker",
+      "additionTime": "2023-06-03 23:25:35",
+      "quantity": 15,
+      "fee": 149.99,
+      "industryId": 14
+    },
+    {
+      "id": 127,
+      "name": "Smart Mirror",
+      "additionTime": "2023-06-04 00:40:20",
+      "quantity": 8,
+      "fee": 199.99,
+      "industryId": 27
+    },
+    {
+      "id": 128,
+      "name": "Smart Car Diagnostic Tool",
+      "additionTime": "2023-06-04 01:55:45",
+      "quantity": 10,
+      "fee": 79.99,
+      "industryId": 20
+    },
+    {
+      "id": 129,
+      "name": "Smart Desk Organizer",
+      "additionTime": "2023-06-04 03:10:50",
+      "quantity": 15,
+      "fee": 49.99,
+      "industryId": 26
+    },
+    {
+      "id": 130,
+      "name": "Smart Water Filter",
+      "additionTime": "2023-06-04 04:25:35",
+      "quantity": 12,
+      "fee": 89.99,
+      "industryId": 31
+    },
+    {
+      "id": 131,
+      "name": "Smart GPS Navigation System",
+      "additionTime": "2023-06-04 05:40:20",
+      "quantity": 10,
+      "fee": 199.99,
+      "industryId": 18
+    },
+    {
+      "id": 132,
+      "name": "Smart Wireless Mouse",
+      "additionTime": "2023-06-04 06:55:55",
+      "quantity": 8,
+      "fee": 29.99,
+      "industryId": 25
+    },
+    {
+      "id": 133,
+      "name": "Smart Bluetooth Speaker",
+      "additionTime": "2023-06-04 08:10:40",
+      "quantity": 10,
+      "fee": 49.99,
+      "industryId": 22
+    },
+    {
+      "id": 134,
+      "name": "Smart Door/Window Sensor",
+      "additionTime": "2023-06-04 09:25:35",
+      "quantity": 15,
+      "fee": 69.99,
+      "industryId": 16
+    },
+    {
+      "id": 135,
+      "name": "Smart Electric Toothbrush",
+      "additionTime": "2023-06-04 10:40:20",
+      "quantity": 8,
+      "fee": 99.99,
+      "industryId": 3
+    },
+    {
+      "id": 136,
+      "name": "Smart Fitness Tracker",
+      "additionTime": "2023-06-04 11:55:45",
+      "quantity": 10,
+      "fee": 79.99,
+      "industryId": 31
+    },
+    {
+      "id": 137,
+      "name": "Smart Coffee Maker",
+      "additionTime": "2023-06-04 13:10:50",
+      "quantity": 15,
+      "fee": 129.99,
+      "industryId": 14
+    },
+    {
+      "id": 138,
+      "name": "Smart Vacuum Sealer",
+      "additionTime": "2023-06-04 14:25:35",
+      "quantity": 8,
+      "fee": 149.99,
+      "industryId": 24
+    },
+    {
+      "id": 139,
+      "name": "Smart Bluetooth Earbuds",
+      "additionTime": "2023-06-04 15:40:20",
+      "quantity": 10,
+      "fee": 89.99,
+      "industryId": 22
+    },
+    {
+      "id": 140,
+      "name": "Smart Pet Feeder",
+      "additionTime": "2023-06-04 16:55:55",
+      "quantity": 12,
+      "fee": 69.99,
+      "industryId": 7
+    },
+    {
+      "id": 141,
+      "name": "Smart Rice Cooker",
+      "additionTime": "2023-06-04 18:10:40",
+      "quantity": 10,
+      "fee": 59.99,
+      "industryId": 26
+    },
+    {
+      "id": 142,
+      "name": "Smart Baby Monitor",
+      "additionTime": "2023-06-04 19:25:55",
+      "quantity": 15,
+      "fee": 99.99,
+      "industryId": 19
+    },
+    {
+      "id": 143,
+      "name": "Smart Power Strip",
+      "additionTime": "2023-06-04 20:40:50",
+      "quantity": 8,
+      "fee": 79.99,
+      "industryId": 27
+    },
+    {
+      "id": 144,
+      "name": "Smart Air Conditioner Controller",
+      "additionTime": "2023-06-04 21:55:35",
+      "quantity": 12,
+      "fee": 59.99,
+      "industryId": 31
+    },
+    {
+      "id": 145,
+      "name": "Smart Food Processor",
+      "additionTime": "2023-06-04 23:10:40",
+      "quantity": 10,
+      "fee": 129.99,
+      "industryId": 26
+    },
+    {
+      "id": 146,
+      "name": "Smart Robot Lawn Mower",
+      "additionTime": "2023-06-05 00:25:25",
+      "quantity": 8,
+      "fee": 299.99,
+      "industryId": 24
+    },
+    {
+      "id": 147,
+      "name": "Smart Blood Pressure Monitor",
+      "additionTime": "2023-06-05 01:40:30",
+      "quantity": 12,
+      "fee": 89.99,
+      "industryId": 31
+    },
+    {
+      "id": 148,
+      "name": "Smart Alarm Clock",
+      "additionTime": "2023-06-05 02:55:55",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 23
+    },
+    {
+      "id": 149,
+      "name": "Smart Portable Charger",
+      "additionTime": "2023-06-05 04:10:40",
+      "quantity": 15,
+      "fee": 49.99,
+      "industryId": 18
+    },
+    {
+      "id": 150,
+      "name": "Smart Water Leak Detector",
+      "additionTime": "2023-06-05 05:25:35",
+      "quantity": 8,
+      "fee": 29.99,
+      "industryId": 16
+    },
+    {
+      "id": 151,
+      "name": "Smart Fitness Scale",
+      "additionTime": "2023-06-05 06:40:20",
+      "quantity": 10,
+      "fee": 69.99,
+      "industryId": 3
+    },
+    {
+      "id": 152,
+      "name": "Smart Media Streaming Device",
+      "additionTime": "2023-06-05 07:55:45",
+      "quantity": 15,
+      "fee": 79.99,
+      "industryId": 22
+    },
+    {
+      "id": 153,
+      "name": "Smart UV Sterilizer",
+      "additionTime": "2023-06-05 09:10:50",
+      "quantity": 8,
+      "fee": 49.99,
+      "industryId": 31
+    },
+    {
+      "id": 154,
+      "name": "Smart Bluetooth Headset",
+      "additionTime": "2023-06-05 10:25:35",
+      "quantity": 10,
+      "fee": 59.99,
+      "industryId": 22
+    },
+    {
+      "id": 155,
+      "name": "Smart Wine Opener",
+      "additionTime": "2023-06-05 11:40:20",
+      "quantity": 12,
+      "fee": 39.99,
+      "industryId": 18
+    },
+    {
+      "id": 156,
+      "name": "Smart Language Translator",
+      "additionTime": "2023-06-05 12:55:55",
+      "quantity": 10,
+      "fee": 99.99,
+      "industryId": 25
+    },
+    {
+      "id": 157,
+      "name": "Smart Foot Massager",
+      "additionTime": "2023-06-05 14:10:40",
+      "quantity": 8,
+      "fee": 149.99,
+      "industryId": 23
+    },
+    {
+      "id": 158,
+      "name": "Smart Power Bank",
+      "additionTime": "2023-06-05 15:25:55",
+      "quantity": 10,
+      "fee": 29.99,
+      "industryId": 18
+    },
+    {
+      "id": 159,
+      "name": "Smart Pet Tracker",
+      "additionTime": "2023-06-05 16:40:50",
+      "quantity": 15,
+      "fee": 69.99,
+      "industryId": 7
+    },
+    {
+      "id": 160,
+      "name": "Smart Meat Thermometer",
+      "additionTime": "2023-06-05 17:55:35",
+      "quantity": 12,
+      "fee": 39.99,
+      "industryId": 26
+    },
+    {
+      "id": 161,
+      "name": "Smart Air Fryer",
+      "additionTime": "2023-06-05 19:10:40",
+      "quantity": 10,
+      "fee": 89.99,
+      "industryId": 14
+    },
+    {
+      "id": 162,
+      "name": "Smart Doorbell",
+      "additionTime": "2023-06-05 20:25:25",
+      "quantity": 8,
+      "fee": 99.99,
+      "industryId": 16
+    },
+    {
+      "id": 163,
+      "name": "Smart Sleep Tracker",
+      "additionTime": "2023-06-05 21:40:30",
+      "quantity": 12,
+      "fee": 79.99,
+      "industryId": 3
+    },
+    {
+      "id": 164,
+      "name": "Smart Tea Maker",
+      "additionTime": "2023-06-05 22:55:55",
+      "quantity": 10,
+      "fee": 59.99,
+      "industryId": 26
+    },
+    {
+      "id": 165,
+      "name": "Smart Robotic Arm",
+      "additionTime": "2023-06-06 00:10:40",
+      "quantity": 15,
+      "fee": 299.99,
+      "industryId": 24
+    },
+    {
+      "id": 166,
+      "name": "Smart Blood Glucose Monitor",
+      "additionTime": "2023-06-06 01:25:35",
+      "quantity": 8,
+      "fee": 89.99,
+      "industryId": 31
+    },
+    {
+      "id": 167,
+      "name": "Smart Plant Watering System",
+      "additionTime": "2023-06-06 02:40:20",
+      "quantity": 10,
+      "fee": 49.99,
+      "industryId": 26
+    },
+    {
+      "id": 168,
+      "name": "Smart Garage Door Opener",
+      "additionTime": "2023-06-06 03:55:45",
+      "quantity": 15,
+      "fee": 99.99,
+      "industryId": 16
+    },
+    {
+      "id": 169,
+      "name": "Smart Blender",
+      "additionTime": "2023-06-06 05:10:50",
+      "quantity": 8,
+      "fee": 79.99,
+      "industryId": 14
+    },
+    {
+      "id": 170,
+      "name": "Smart Plant Monitor",
+      "additionTime": "2023-06-06 06:25:35",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 26
+    },
+    {
+      "id": 171,
+      "name": "Smart Electric Shaver",
+      "additionTime": "2023-06-06 07:40:20",
+      "quantity": 12,
+      "fee": 69.99,
+      "industryId": 3
+    },
+    {
+      "id": 172,
+      "name": "Smart Security Camera",
+      "additionTime": "2023-06-06 08:55:55",
+      "quantity": 10,
+      "fee": 99.99,
+      "industryId": 27
+    },
+    {
+      "id": 173,
+      "name": "Smart Instant Pot",
+      "additionTime": "2023-06-06 10:10:40",
+      "quantity": 8,
+      "fee": 129.99,
+      "industryId": 14
+    },
+    {
+      "id": 174,
+      "name": "Smart Noise-Canceling Headphones",
+      "additionTime": "2023-06-06 11:25:55",
+      "quantity": 10,
+      "fee": 149.99,
+      "industryId": 22
+    },
+    {
+      "id": 175,
+      "name": "Smart Air Purifier",
+      "additionTime": "2023-06-06 12:40:50",
+      "quantity": 15,
+      "fee": 199.99,
+      "industryId": 27
+    },
+    {
+      "id": 176,
+      "name": "Smart Car Charger",
+      "additionTime": "2023-06-06 13:55:35",
+      "quantity": 8,
+      "fee": 29.99,
+      "industryId": 20
+    },
+    {
+      "id": 177,
+      "name": "Smart Sous Vide Cooker",
+      "additionTime": "2023-06-06 15:10:40",
+      "quantity": 10,
+      "fee": 149.99,
+      "industryId": 14
+    },
+    {
+      "id": 178,
+      "name": "Smart Mirror",
+      "additionTime": "2023-06-06 16:25:35",
+      "quantity": 15,
+      "fee": 199.99,
+      "industryId": 27
+    },
+    {
+      "id": 179,
+      "name": "Smart Car Diagnostic Tool",
+      "additionTime": "2023-06-06 17:40:20",
+      "quantity": 8,
+      "fee": 79.99,
+      "industryId": 20
+    },
+    {
+      "id": 180,
+      "name": "Smart Desk Organizer",
+      "additionTime": "2023-06-06 18:55:45",
+      "quantity": 10,
+      "fee": 49.99,
+      "industryId": 26
+    },
+    {
+      "id": 181,
+      "name": "Smart Water Filter",
+      "additionTime": "2023-06-06 20:10:50",
+      "quantity": 15,
+      "fee": 89.99,
+      "industryId": 31
+    },
+    {
+      "id": 182,
+      "name": "Smart GPS Navigation System",
+      "additionTime": "2023-06-06 21:25:35",
+      "quantity": 8,
+      "fee": 199.99,
+      "industryId": 18
+    },
+    {
+      "id": 183,
+      "name": "Smart Wireless Mouse",
+      "additionTime": "2023-06-06 22:40:20",
+      "quantity": 10,
+      "fee": 29.99,
+      "industryId": 21
+    },
+    {
+      "id": 184,
+      "name": "Smart Hair Dryer",
+      "additionTime": "2023-06-06 23:55:55",
+      "quantity": 12,
+      "fee": 79.99,
+      "industryId": 23
+    },
+    {
+      "id": 185,
+      "name": "Smart Water Bottle",
+      "additionTime": "2023-06-07 01:10:40",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 27
+    },
+    {
+      "id": 186,
+      "name": "Smart Electric Toothbrush",
+      "additionTime": "2023-06-07 02:25:25",
+      "quantity": 8,
+      "fee": 59.99,
+      "industryId": 23
+    },
+    {
+      "id": 187,
+      "name": "Smart Security Safe",
+      "additionTime": "2023-06-07 03:40:30",
+      "quantity": 12,
+      "fee": 99.99,
+      "industryId": 27
+    },
+    {
+      "id": 188,
+      "name": "Smart Car Locator",
+      "additionTime": "2023-06-07 04:55:55",
+      "quantity": 10,
+      "fee": 49.99,
+      "industryId": 20
+    },
+    {
+      "id": 189,
+      "name": "Smart Portable Projector",
+      "additionTime": "2023-06-07 06:10:40",
+      "quantity": 8,
+      "fee": 199.99,
+      "industryId": 18
+    },
+    {
+      "id": 190,
+      "name": "Smart Knife Set",
+      "additionTime": "2023-06-07 07:25:35",
+      "quantity": 10,
+      "fee": 129.99,
+      "industryId": 14
+    },
+    {
+      "id": 191,
+      "name": "Smart Air Quality Monitor",
+      "additionTime": "2023-06-07 08:40:20",
+      "quantity": 12,
+      "fee": 69.99,
+      "industryId": 27
+    },
+    {
+      "id": 192,
+      "name": "Smart Pet Camera",
+      "additionTime": "2023-06-07 09:55:45",
+      "quantity": 15,
+      "fee": 89.99,
+      "industryId": 7
+    },
+    {
+      "id": 193,
+      "name": "Smart Car Tracker",
+      "additionTime": "2023-06-07 11:10:50",
+      "quantity": 8,
+      "fee": 69.99,
+      "industryId": 20
+    },
+    {
+      "id": 194,
+      "name": "Smart Desk Lamp",
+      "additionTime": "2023-06-07 12:25:35",
+      "quantity": 10,
+      "fee": 49.99,
+      "industryId": 23
+    },
+    {
+      "id": 195,
+      "name": "Smart Vacuum Cleaner",
+      "additionTime": "2023-06-07 13:40:20",
+      "quantity": 12,
+      "fee": 199.99,
+      "industryId": 24
+    },
+    {
+      "id": 196,
+      "name": "Smart Electric Kettle",
+      "additionTime": "2023-06-07 14:55:55",
+      "quantity": 10,
+      "fee": 39.99,
+      "industryId": 14
+    },
+    {
+      "id": 197,
+      "name": "Smart Rice Cooker",
+      "additionTime": "2023-06-07 16:10:40",
+      "quantity": 8,
+      "fee": 79.99,
+      "industryId": 14
+    },
+    {
+      "id": 198,
+      "name": "Smart Air Conditioner",
+      "additionTime": "2023-06-07 17:25:55",
+      "quantity": 15,
+      "fee": 299.99,
+      "industryId": 27
+    },
+    {
+      "id": 199,
+      "name": "Smart Wi-Fi Range Extender",
+      "additionTime": "2023-06-07 18:40:50",
+      "quantity": 8,
+      "fee": 49.99,
+      "industryId": 21
+    },
+    {
+      "id": 200,
+      "name": "Smart Security Door Lock",
+      "additionTime": "2023-06-07 19:55:35",
+      "quantity": 10,
+      "fee": 149.99,
+      "industryId": 16
+    }
+  ]  
 }
+

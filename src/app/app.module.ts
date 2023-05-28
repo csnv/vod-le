@@ -19,6 +19,9 @@ import { IndustryDialogComponent } from './industry/industry-dialog/industry-dia
 
 import { DeviceComponent } from './device/device.component';
 import { HomeComponent } from './home/home.component';
+import { DeviceListComponent } from './device/device-list/device-list.component';
+import { DeviceDialogComponent } from './device/device-dialog/device-dialog.component';
+import { IdentifyPipe } from './shared/pipes/identify/identify.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,10 @@ import { HomeComponent } from './home/home.component';
     IndustryDialogComponent,
     PaginatePipe,
     PaginationComponent,
-    HomeComponent
+    HomeComponent,
+    DeviceListComponent,
+    DeviceDialogComponent,
+    IdentifyPipe
   ],
   imports: [
     FormsModule,

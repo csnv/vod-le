@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { IndustryDialogComponent } from '../industry-dialog/industry-dialog.component';
 import { Subscription } from 'rxjs';
 import { BaseList } from '../../shared/bases/base-list';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-industry-list',
@@ -17,10 +18,13 @@ import { BaseList } from '../../shared/bases/base-list';
 export class IndustryListComponent extends BaseList<Industry> implements OnInit, OnDestroy {
   /* Industry service subscription */
   industryServiceSub!: Subscription;
+  /* Overriden settings */
+  override sortingField: string = 'id';
 
   constructor(
     private industryService: IndustryService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private router: Router
   ) {
     super();
   }
@@ -58,6 +62,18 @@ export class IndustryListComponent extends BaseList<Industry> implements OnInit,
    */
   onDelete(item: Industry) {
     this.industryService.removeIndustry(item);
+  }
+
+  /**
+   * Nav to devices list and filter by industry
+   * @param industryId Selected industry Id
+   */
+  goToRelatedDevices(industryId: number) {
+    this.router.navigate(['/devices'], {
+      queryParams: {
+        industryId
+      }
+    });
   }
 
   /**

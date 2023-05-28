@@ -4,16 +4,21 @@ import { IndustryListComponent } from './industry-list.component';
 import { IndustryService } from '../industry.service';
 import { MatDialog } from '@angular/material/dialog';
 import { PaginatePipe } from '../../shared/pipes/paginate/paginate.pipe';
-import { FilterPipe } from '../../shared/pipes/filter/filter.pipe';
 import { SortPipe } from '../../shared/pipes/sort/sort.pipe';
 import { of } from 'rxjs';
 import { PaginationComponent } from '../../shared/components/pagination/pagination.component';
 import { FormsModule } from '@angular/forms';
 import { Industry } from '../industry.model';
-import api from '../../../../api/db.json';
+import { RouterTestingModule } from '@angular/router/testing';
+import { Router } from '@angular/router';
+
+class DummyDeviceComponent {}
+
 describe('IndustryListComponent', () => {
   let component: IndustryListComponent;
   let fixture: ComponentFixture<IndustryListComponent>;
+  let router: Router;  
+
   const industriesList: Industry[] = [
     { id: 0, name: 'Abc 1'},
     { id: 1, name: 'Def 6'},
@@ -30,7 +35,8 @@ describe('IndustryListComponent', () => {
 
   const matDialogMock = {
     open: jest.fn()
-  }
+  };
+
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -45,11 +51,13 @@ describe('IndustryListComponent', () => {
         { provide: MatDialog, useValue: matDialogMock }
       ],
       imports: [
-        FormsModule
+        FormsModule,
+        RouterTestingModule.withRoutes([ { path: 'devices', component: DummyDeviceComponent } ])
       ]
     })
     .compileComponents();
 
+    router = TestBed.inject(Router);
     fixture = TestBed.createComponent(IndustryListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -73,5 +81,17 @@ describe('IndustryListComponent', () => {
   it('delete an industry', () => {
     component.onDelete(industriesList[0]);
     expect(industryServiceMock.removeIndustry).toHaveBeenCalledWith(industriesList[0]);
+  });
+
+  it('go to related devices with params', () => {
+    const industryId = 5;
+    const queryParams = {
+      industryId
+    };
+
+    jest.spyOn(router, 'navigate');
+    component.goToRelatedDevices(industryId);
+
+    expect(router.navigate).toHaveBeenCalledWith(['/devices'], { queryParams });
   });
 });

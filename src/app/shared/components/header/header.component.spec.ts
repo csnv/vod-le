@@ -4,14 +4,12 @@ import { Location } from '@angular/common';
 
 import { HeaderComponent } from './header.component';
 import { By } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 
 class DummyComponent {}
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
-  let router: Router;
   let location: Location;
 
   beforeEach(async () => {
@@ -21,7 +19,6 @@ describe('HeaderComponent', () => {
     })
     .compileComponents();
     
-    router = TestBed.inject(Router);
     location = TestBed.inject(Location);
 
     fixture = TestBed.createComponent(HeaderComponent);
