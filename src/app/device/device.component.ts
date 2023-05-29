@@ -75,7 +75,6 @@ export class DeviceComponent implements OnInit {
    */
   onDelete() {
     this.queryIndustrySub.unsubscribe();
-    console.log(this.industryServiceSub)
     this.industryServiceSub.unsubscribe();
   }
 }
